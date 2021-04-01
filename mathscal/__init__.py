@@ -1,1 +1,1 @@
-import mathscal
+from .mathscal import *
