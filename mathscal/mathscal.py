@@ -1,6 +1,7 @@
 import math
 import random
 
+
 class Pythagorus_Theorem():
     def __init__(self, in_root=False):
         self.in_root = in_root
@@ -14,7 +15,6 @@ class Pythagorus_Theorem():
 
         else:
             return hypotenuse_in_decimal
-
 
     def base(self, p, h):
         base_in_decimal = math.sqrt((h**2 - p**2))
@@ -37,10 +37,11 @@ class Pythagorus_Theorem():
             return perpendicular_in_decimal
 
 
-def power(self, number, power):
+def power(number, power):
     return number ** power
-    
-def distance_of_coordinates(self, coordinate1, coordinate2, in_root=False):
+
+
+def distance_of_coordinates(coordinate1, coordinate2, in_root=False):
     x1 = coordinate1[0]
     y1 = coordinate1[1]
     x2 = coordinate2[0]
@@ -48,7 +49,7 @@ def distance_of_coordinates(self, coordinate1, coordinate2, in_root=False):
 
     distance_in_root = (x2-x1)**2 + (y2-y1)**2
     distance_in_decimal = math.sqrt((x2-x1)**2 + (y2-y1)**2)
-    
+
     if in_root:
         return distance_in_root
 
@@ -56,14 +57,15 @@ def distance_of_coordinates(self, coordinate1, coordinate2, in_root=False):
         return distance_in_decimal
 
 
-def sum_of_interior_angles(self, number_of_sides):
+def sum_of_interior_angles(number_of_sides):
     sum = (number_of_sides - 2) * 180
     return sum
 
 
-def generate_random_numbers(self, min, max):
+def generate_random_numbers(min, max):
     number = random.randint(min, max)
     return number
+
 
 class Temp_Scale_Converter():
     def c_to_f(self, c):
@@ -91,7 +93,7 @@ class Temp_Scale_Converter():
         return k
 
 
-def midpoint_of_coordinates(self, coordinate1, coordinate2, in_fraction=False):
+def midpoint_of_coordinates(coordinate1, coordinate2, in_fraction=False):
     x1 = coordinate1[0]
     y1 = coordinate1[1]
     x2 = coordinate2[0]
@@ -99,7 +101,7 @@ def midpoint_of_coordinates(self, coordinate1, coordinate2, in_fraction=False):
 
     midpoint_in_decimal = (((x1 + x2)/2), ((y1 + y2)/2))
     midpoint_in_fraction = (str((x1 + x2)) + '/2', str((y1 + y2)) + '/2')
-        
+
     if in_fraction:
         return midpoint_in_fraction
 
@@ -107,13 +109,13 @@ def midpoint_of_coordinates(self, coordinate1, coordinate2, in_fraction=False):
         return midpoint_in_decimal
 
 
-def emi(self, p, r, n):
+def emi(p, r, n):
     r = r / 1200
     emi = (p * r * ((r+1)**n))/(((1+r)**n) - 1)
     return emi
 
 
-def slope_of_coordinates(self, coordinate1, coordinate2, in_fraction=False):
+def slope_of_coordinates(coordinate1, coordinate2, in_fraction=False):
     x1 = coordinate1[0]
     y1 = coordinate1[1]
     x2 = coordinate2[0]
@@ -121,7 +123,7 @@ def slope_of_coordinates(self, coordinate1, coordinate2, in_fraction=False):
 
     slope_in_decimal = (y2 - y1)/(x2 - x1)
     slope_in_fraction = str((y2 - y1)) + '/' + str((x2-x1))
-        
+
     if in_fraction:
         return slope_in_fraction
 
@@ -129,12 +131,12 @@ def slope_of_coordinates(self, coordinate1, coordinate2, in_fraction=False):
         return slope_in_decimal
 
 
-def multiplication_table_generator(self, number, end):
+def multiplication_table_generator(number, end):
     for i in range(1, end+1):
         print(number, '*', i, '=', number*i)
 
 
-def check_prime(self, number):
+def check_prime(number):
     prime = True
     if number % 2 == 0 and number != 2:
         prime = False
@@ -146,5 +148,5 @@ def check_prime(self, number):
         for i in range(2, number):
             if number % i == 0:
                 prime = False
-            
+
     return prime

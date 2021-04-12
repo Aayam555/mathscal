@@ -3,9 +3,9 @@ import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = '0.1.0'
+VERSION = '0.1.3'
 DESCRIPTION = 'Package to do maths'
-LONG_DESCRIPTION = 'A package that allows to do math calculation. For webapp visit https://mathscal.netlify.app'
+LONG_DESCRIPTION = 'A package that allows to do math calculation. For webapp visit https://mathscal.netlify.app and for documentation visit https://mathscal-docs.netlify.app'
 
 # Setting up
 setup(name="mathscal",
